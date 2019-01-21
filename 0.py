@@ -874,8 +874,46 @@ with open(filaname,'a') as file_object:
 	file_object.write("I love creating apps.\n")
 '''
 
-
+'''
 print("2 numbers:")
 print("enter 'q' to quit.")
 
 while True:
+	first_number = input("\nFirst number:")
+	if first_number == "q":
+		break
+	second_number = input("\nSecond number")
+	if second_number == "q":
+		break
+	answer = int(first_number) / int(second_number)
+	print(answer)
+	input()
+'''
+
+'''
+try:
+	print(5/1)
+except ZeroDivisionError:
+	print("You can not divide by zero.")
+'''
+
+'''
+filaname = 'a.txt'
+try:
+	with open(filaname) as f:
+		contents = f.read()
+except FileNotFoundError
+:#FileNotFoundError文件不存在
+	msg = "Sorre, the file  " + filaname + " does not exist."
+	print(msg)
+'''
+
+'''
+import json
+numbers = [2,3,5,7,11,13]
+filaname = 'numbers.json'
+with open(filaname,'w') as f:
+	json.dump(numbers,f)#写入到一个json的文件
+'''
+
+
